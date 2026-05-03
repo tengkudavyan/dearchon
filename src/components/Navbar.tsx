@@ -99,7 +99,7 @@ export default function Navbar({
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
         >
-          {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {menuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
         </button>
       </nav>
       {menuOpen && (

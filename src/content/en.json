@@ -112,10 +112,7 @@
   "portfolio": {
     "eyebrow": "Portfolio",
     "title": "Featured project",
-    "project": "CDI Facility Services",
-    "url": "cdifacilityservices.co.id",
-    "description": "A company profile website for a facility management and outsourcing company serving enterprise clients.",
-    "tags": ["Company Profile", "Facility Management", "Enterprise Services"],
+    "description": "A selection of digital products we have delivered for companies that need practical, polished, and reliable solutions.",
     "cta": "Visit Website"
   },
   "contact": {

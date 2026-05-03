@@ -134,8 +134,8 @@ export default function HomeScreen() {
             transition={{ duration: 0.65, ease: "easeOut" }}
             className="mx-auto max-w-5xl"
           >
-            <span className="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-white/80">
-              <Sparkles className="h-4 w-4 text-electric" aria-hidden="true" />
+            <span className="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-medium text-white/80 sm:text-sm">
+              <Sparkles className="hidden h-4 w-4 text-electric sm:block" aria-hidden="true" />
               {t.hero.eyebrow}
             </span>
             <h1 className="text-balance mt-8 text-5xl font-semibold tracking-tight text-white md:text-7xl lg:text-8xl">
@@ -158,12 +158,12 @@ export default function HomeScreen() {
             initial="hidden"
             animate="visible"
             transition={{ delay: 0.18, duration: 0.65, ease: "easeOut" }}
-            className="glass-dark mx-auto mt-14 grid w-full max-w-3xl grid-cols-1 overflow-hidden rounded-3xl sm:grid-cols-3"
+            className="glass-dark mx-auto mt-14 grid w-full max-w-3xl grid-cols-3 overflow-hidden rounded-3xl"
           >
             {t.hero.stats.map((stat) => (
-              <div key={stat.label} className="border-white/20 px-6 py-6 sm:border-r last:sm:border-r-0">
-                <p className="text-4xl font-semibold tracking-tight text-white">{stat.value}</p>
-                <p className="mt-2 text-sm font-medium text-white/60">{stat.label}</p>
+              <div key={stat.label} className="border-r border-white/20 px-2 py-5 last:border-r-0 sm:px-6 sm:py-6">
+                <p className="text-2xl font-semibold tracking-tight text-white sm:text-4xl">{stat.value}</p>
+                <p className="mt-2 text-[11px] font-medium leading-tight text-white/60 sm:text-sm">{stat.label}</p>
               </div>
             ))}
           </motion.div>
