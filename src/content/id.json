@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "services": "Layanan",
+    "build": "Yang Kami Bangun",
+    "process": "Cara Kerja",
+    "why": "Kenapa Kami",
+    "portfolio": "Portofolio",
+    "contact": "Kontak",
+    "cta": "Hubungi Kami"
+  },
+  "hero": {
+    "eyebrow": "Partner digital all-in-one untuk perusahaan berkembang",
+    "title": "We Build It. You Run It.",
+    "subtitle": "Dearchon membantu perusahaan menengah hingga besar menemukan peluang digital, merancang produk yang tepat, membangunnya dari awal sampai selesai, dan menjaga semuanya tetap berjalan tanpa kerumitan teknis.",
+    "primary": "Mulai Proyek",
+    "secondary": "Lihat Cara Kerja",
+    "stats": [
+      { "value": "25+", "label": "Proyek Terkirim" },
+      { "value": "15+", "label": "Layanan Digital" },
+      { "value": "24/7", "label": "Siap Support" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Layanan",
+    "title": "Semua yang bisnis Anda butuhkan dari ide sampai launch.",
+    "subtitle": "Mulai dari konsultasi teknologi sampai support jangka panjang, Dearchon menangani perjalanan produk secara lengkap.",
+    "items": [
+      {
+        "title": "Konsultasi Teknologi",
+        "description": "Kami mengidentifikasi workflow, departemen, dan customer journey yang bisa dioptimalkan dengan teknologi."
+      },
+      {
+        "title": "Pengembangan Website",
+        "description": "Company site, marketing page, dan pengalaman web korporat yang premium untuk membangun trust dan konversi."
+      },
+      {
+        "title": "Aplikasi Web",
+        "description": "Internal tools, dashboard, portal, dan sistem yang disesuaikan dengan kebutuhan operasional perusahaan."
+      },
+      {
+        "title": "Aplikasi Mobile",
+        "description": "Produk mobile untuk customer, karyawan, dan partner dengan UX bersih dan fondasi yang scalable."
+      },
+      {
+        "title": "Desain UI/UX",
+        "description": "Strategi produk, flow, wireframe, dan interface yang membuat pekerjaan kompleks terasa sederhana."
+      },
+      {
+        "title": "Maintenance & Support",
+        "description": "Pendampingan setelah launch, termasuk perbaikan, improvement, monitoring, dan pengembangan lanjutan."
+      }
+    ]
+  },
+  "build": {
+    "eyebrow": "Yang Bisa Kami Bangun",
+    "title": "Produk digital untuk operasional bisnis nyata.",
+    "subtitle": "Pilih tipe produk yang sudah terbukti atau bawa tantangan bisnis khusus. Kami bentuk solusi yang paling tepat.",
+    "items": [
+      "CRM",
+      "HRM",
+      "POS System",
+      "E-Commerce",
+      "Job Portal",
+      "Booking System",
+      "Company Profile",
+      "Landing Page",
+      "F&B App"
+    ]
+  },
+  "process": {
+    "eyebrow": "Cara Kerja",
+    "title": "Jalur yang jelas dari masalah bisnis menjadi produk siap pakai.",
+    "subtitle": "Anda tetap fokus pada bisnis. Kami menerjemahkan kebutuhan menjadi produk digital lengkap dan memandu setiap tahap.",
+    "steps": [
+      { "title": "Consult", "description": "Memahami tujuan bisnis, pain point, pengguna, dan konteks operasional." },
+      { "title": "Plan", "description": "Menentukan scope, prioritas, arah teknis, timeline, dan milestone delivery." },
+      { "title": "Design", "description": "Membuat user flow dan interface premium yang sesuai brand serta workflow." },
+      { "title": "Build", "description": "Mengembangkan produk dengan arsitektur scalable dan keputusan teknis yang praktis." },
+      { "title": "Test", "description": "Memvalidasi kualitas, responsivitas, usability, dan journey utama sebelum rilis." },
+      { "title": "Launch", "description": "Menyiapkan deployment, handover, dokumentasi, dan kesiapan production." },
+      { "title": "Maintain", "description": "Mendukung, meningkatkan, dan mengembangkan produk setelah digunakan." }
+    ]
+  },
+  "why": {
+    "eyebrow": "Kenapa Dearchon",
+    "title": "Satu partner. Lebih sedikit handoff. Hasil lebih rapi.",
+    "subtitle": "Perusahaan memilih Dearchon saat membutuhkan tim tepercaya yang bisa berpikir strategis dan mengeksekusi secara teknis.",
+    "advantages": [
+      {
+        "title": "Teknologi berbasis bisnis",
+        "description": "Kami merekomendasikan teknologi hanya ketika itu menciptakan nilai operasional yang jelas."
+      },
+      {
+        "title": "Kepemilikan end-to-end",
+        "description": "Konsultasi, desain, development, deployment, dan maintenance berada dalam satu tim."
+      },
+      {
+        "title": "User experience premium",
+        "description": "Interface yang bersih membantu tim lebih cepat mengadopsi sistem dan customer lebih percaya."
+      },
+      {
+        "title": "Dibangun untuk jangka panjang",
+        "description": "Produk dirancang agar bisa berkembang mengikuti pengguna, workflow, dan kebutuhan bisnis baru."
+      }
+    ],
+    "stats": [
+      { "value": "1", "label": "Partner dari awal sampai support" },
+      { "value": "7", "label": "Tahap delivery terstruktur" },
+      { "value": "0", "label": "Kerumitan teknis untuk klien" }
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "Portofolio",
+    "title": "Proyek pilihan",
+    "project": "CDI Facility Services",
+    "url": "cdifacilityservices.co.id",
+    "description": "Website company profile untuk perusahaan facility management dan outsourcing yang melayani klien enterprise.",
+    "tags": ["Company Profile", "Facility Management", "Enterprise Services"],
+    "cta": "Kunjungi Website"
+  },
+  "contact": {
+    "eyebrow": "Kontak",
+    "title": "Siap mengeksplor apa saja yang bisa teknologi tingkatkan di perusahaan Anda?",
+    "subtitle": "Mulai dengan konsultasi gratis tanpa komitmen. Ceritakan tantangan bisnis Anda, dan kami bantu memetakan langkah praktis berikutnya.",
+    "whatsapp": "WhatsApp Kami",
+    "email": "Email Kami",
+    "note": "Konsultasi gratis. Tanpa komitmen. Rekomendasi jelas sebelum membangun.",
+    "emailAddress": "davyan@dearchon.com",
+    "whatsappUrl": "https://wa.me/6281262342529?text=I%20want%20to%20consultate%20with%20Dearchon",
+    "emailUrl": "mailto:davyan@dearchon.com"
+  },
+  "footer": {
+    "description": "Dearchon membangun produk digital lengkap untuk perusahaan yang membutuhkan eksekusi tepercaya tanpa kerumitan teknis.",
+    "contact": "Kontak"
+  }
+}

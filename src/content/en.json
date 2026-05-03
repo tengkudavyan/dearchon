@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "services": "Services",
+    "build": "What We Build",
+    "process": "How We Work",
+    "why": "Why Us",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "eyebrow": "All-in-one digital partner for growing companies",
+    "title": "We Build It. You Run It.",
+    "subtitle": "Dearchon helps mid to large companies assess opportunities, design the right product, build it end to end, and keep it running without technical hassle.",
+    "primary": "Start a Project",
+    "secondary": "See How We Work",
+    "stats": [
+      { "value": "25+", "label": "Projects Delivered" },
+      { "value": "15+", "label": "Digital Services" },
+      { "value": "24/7", "label": "Support Ready" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Everything your business needs to move from idea to launch.",
+    "subtitle": "From early technology consulting to long-term support, Dearchon handles the complete product journey.",
+    "items": [
+      {
+        "title": "Tech Consulting",
+        "description": "We identify workflows, departments, and customer journeys that can be optimized with technology."
+      },
+      {
+        "title": "Website Development",
+        "description": "Premium company sites, marketing pages, and corporate web experiences built for trust and conversion."
+      },
+      {
+        "title": "Web Application",
+        "description": "Internal tools, dashboards, portals, and systems tailored to your operational reality."
+      },
+      {
+        "title": "Mobile App",
+        "description": "Mobile products for customers, employees, and partners with clean UX and scalable foundations."
+      },
+      {
+        "title": "UI/UX Design",
+        "description": "Product strategy, flows, wireframes, and polished interfaces that make complex work feel simple."
+      },
+      {
+        "title": "Maintenance & Support",
+        "description": "Reliable care after launch, including fixes, improvements, monitoring, and product evolution."
+      }
+    ]
+  },
+  "build": {
+    "eyebrow": "What We Can Build",
+    "title": "Digital products for real business operations.",
+    "subtitle": "Choose a proven product type or bring a custom business challenge. We shape the right solution around it.",
+    "items": [
+      "CRM",
+      "HRM",
+      "POS System",
+      "E-Commerce",
+      "Job Portal",
+      "Booking System",
+      "Company Profile",
+      "Landing Page",
+      "F&B App"
+    ]
+  },
+  "process": {
+    "eyebrow": "How We Work",
+    "title": "A clear path from business problem to working product.",
+    "subtitle": "You stay focused on the business. We translate needs into a complete digital product and guide every step.",
+    "steps": [
+      { "title": "Consult", "description": "Understand business goals, pain points, users, and operational context." },
+      { "title": "Plan", "description": "Define scope, priorities, technical direction, timeline, and delivery milestones." },
+      { "title": "Design", "description": "Create user flows and premium interfaces that match your brand and workflow." },
+      { "title": "Build", "description": "Develop the product with scalable architecture and practical engineering decisions." },
+      { "title": "Test", "description": "Validate quality, responsiveness, usability, and key user journeys before release." },
+      { "title": "Launch", "description": "Prepare deployment, handover, documentation, and production readiness." },
+      { "title": "Maintain", "description": "Support, improve, and evolve the product after it reaches real users." }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Dearchon",
+    "title": "One partner. Fewer handoffs. Better outcomes.",
+    "subtitle": "Companies choose Dearchon when they need a trusted team that can think strategically and execute technically.",
+    "advantages": [
+      {
+        "title": "Business-first technology",
+        "description": "We recommend technology only where it creates measurable operational value."
+      },
+      {
+        "title": "End-to-end ownership",
+        "description": "Consulting, design, development, deployment, and maintenance stay under one roof."
+      },
+      {
+        "title": "Premium user experience",
+        "description": "Clean interfaces help teams adopt systems faster and customers trust your brand."
+      },
+      {
+        "title": "Built for long-term use",
+        "description": "We design products that can grow with new users, workflows, and business needs."
+      }
+    ],
+    "stats": [
+      { "value": "1", "label": "Partner from start to support" },
+      { "value": "7", "label": "Structured delivery stages" },
+      { "value": "0", "label": "Technical hassle for clients" }
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "Portfolio",
+    "title": "Featured project",
+    "project": "CDI Facility Services",
+    "url": "cdifacilityservices.co.id",
+    "description": "A company profile website for a facility management and outsourcing company serving enterprise clients.",
+    "tags": ["Company Profile", "Facility Management", "Enterprise Services"],
+    "cta": "Visit Website"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Ready to explore what technology can improve in your company?",
+    "subtitle": "Book a free consultation with no commitment. Tell us your business challenge, and we will help map the practical next step.",
+    "whatsapp": "WhatsApp Us",
+    "email": "Email Us",
+    "note": "Free consultation. No commitment. Clear recommendations before you build.",
+    "emailAddress": "davyan@dearchon.com",
+    "whatsappUrl": "https://wa.me/6281262342529?text=I%20want%20to%20consultate%20with%20Dearchon",
+    "emailUrl": "mailto:davyan@dearchon.com"
+  },
+  "footer": {
+    "description": "Dearchon builds complete digital products for companies that want trusted execution without technical hassle.",
+    "contact": "Contact"
+  }
+}
