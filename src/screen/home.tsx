@@ -126,7 +126,7 @@ export default function HomeScreen() {
 
       <section className="dark-panel relative overflow-hidden pt-24 text-white md:pt-24">
         <DashboardBackdrop className="pointer-events-none absolute left-1/2 top-[11.745rem] z-0 w-[min(1180px,118vw)] -translate-x-1/2 opacity-20 md:top-[9.5175rem] md:opacity-20" />
-        <div className="section-shell relative z-10 flex min-h-[820px] flex-col justify-center pb-20 text-center md:min-h-[900px] md:pb-24">
+        <div className="section-shell relative z-10 flex min-h-[820px] flex-col justify-center pb-6 text-center md:min-h-[900px] md:pb-24">
           <motion.div
             variants={fadeUp}
             initial="hidden"
