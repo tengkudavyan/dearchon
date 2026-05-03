@@ -59,7 +59,7 @@ export default function Navbar({
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
       <nav
-        className={`mx-auto flex min-h-16 max-w-6xl items-center justify-between rounded-full border px-4 backdrop-blur-2xl transition-colors duration-300 md:px-6 ${navShellClass}`}
+        className={`mx-auto flex min-h-16 max-w-6xl items-center justify-between rounded-2xl border px-4 backdrop-blur-2xl transition-colors duration-300 md:px-6 ${navShellClass}`}
       >
         <Logo inverted={navOverDark} />
         <div className="hidden items-center gap-7 lg:flex">
@@ -70,13 +70,13 @@ export default function Navbar({
           ))}
         </div>
         <div className="hidden items-center gap-3 md:flex">
-          <div className={`flex rounded-full border p-1 transition-colors ${switcherClass}`}>
+          <div className={`flex rounded-xl border p-1 transition-colors ${switcherClass}`}>
             {(["en", "id"] as Locale[]).map((lang) => (
               <button
                 key={lang}
                 type="button"
                 onClick={() => onLocaleChange(lang)}
-                className={`h-9 min-w-11 rounded-full text-xs font-bold transition ${
+                className={`h-9 min-w-11 rounded-lg text-xs font-bold transition ${
                   locale === lang ? activeLangClass : inactiveLangClass
                 }`}
                 aria-pressed={locale === lang}
@@ -87,14 +87,14 @@ export default function Navbar({
           </div>
           <a
             href="#contact"
-            className={`inline-flex min-h-10 items-center rounded-full px-5 text-sm font-semibold transition ${navCtaClass}`}
+            className={`inline-flex min-h-10 items-center rounded-xl px-5 text-sm font-semibold transition ${navCtaClass}`}
           >
             {labels.cta}
           </a>
         </div>
         <button
           type="button"
-          className={`grid h-11 w-11 place-items-center rounded-full border transition ${mobileMenuClass} md:hidden`}
+          className={`grid h-11 w-11 place-items-center rounded-xl border transition ${mobileMenuClass} md:hidden`}
           onClick={onMenuToggle}
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
@@ -122,7 +122,7 @@ export default function Navbar({
                 key={lang}
                 type="button"
                 onClick={() => onLocaleChange(lang)}
-                className={`flex-1 rounded-full px-4 py-3 text-sm font-bold ${
+                className={`flex-1 rounded-xl px-4 py-3 text-sm font-bold ${
                   locale === lang ? "bg-navy text-white" : "bg-slate-50 text-slate-600"
                 }`}
               >
@@ -133,7 +133,7 @@ export default function Navbar({
           <a
             href="#contact"
             onClick={onMenuClose}
-            className="mt-3 flex min-h-12 items-center justify-center rounded-full bg-navy px-5 text-sm font-semibold text-white"
+            className="mt-3 flex min-h-12 items-center justify-center rounded-xl bg-navy px-5 text-sm font-semibold text-white"
           >
             {labels.cta}
           </a>

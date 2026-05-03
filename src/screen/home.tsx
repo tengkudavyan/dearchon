@@ -3,26 +3,17 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import {
-  BriefcaseBusiness,
-  Building2,
-  CalendarCheck,
   CheckCircle2,
   Code2,
-  Globe2,
   Headphones,
-  Layers3,
   Mail,
   MessageCircle,
   MonitorSmartphone,
   PenTool,
-  Rocket,
   Route,
   ShieldCheck,
-  ShoppingBag,
   Smartphone,
   Sparkles,
-  Utensils,
-  UsersRound,
   Wrench
 } from "lucide-react";
 import { PrimaryButton, SecondaryButton } from "@/components/Buttons";
@@ -39,6 +30,18 @@ type Content = typeof en;
 
 const content: Record<Locale, Content> = { en, id };
 
+const buildImages: Record<string, string> = {
+  CRM: "/images/build-crm-usecase-v2.png",
+  HRM: "/images/build-hrm-usecase.png",
+  "POS System": "/images/build-pos-system-usecase.png",
+  "E-Commerce": "/images/build-ecommerce-usecase.png",
+  "Job Portal": "/images/build-job-portal-usecase.png",
+  "Booking System": "/images/build-booking-billiard-cashier-usecase.png",
+  "Company Profile": "/images/build-company-profile-usecase.png",
+  "Landing Page": "/images/build-landing-page-usecase.png",
+  "F&B App": "/images/build-fnb-app-cashier-usecase.png"
+};
+
 const navItems = [
   { key: "services", href: "#services" },
   { key: "build", href: "#build" },
@@ -48,17 +51,6 @@ const navItems = [
 ] as const;
 
 const serviceIcons = [Sparkles, Code2, MonitorSmartphone, Smartphone, PenTool, Wrench];
-const buildIcons = [
-  UsersRound,
-  BriefcaseBusiness,
-  ShoppingBag,
-  Globe2,
-  Building2,
-  CalendarCheck,
-  Layers3,
-  Rocket,
-  Utensils
-];
 const advantageIcons = [Route, ShieldCheck, Sparkles, Headphones];
 
 const fadeUp = {
@@ -124,7 +116,7 @@ export default function HomeScreen() {
         onMenuToggle={() => setMenuOpen((value) => !value)}
       />
 
-      <section className="dark-panel relative overflow-hidden pt-24 text-white md:pt-24">
+      <section className="dark-panel relative overflow-hidden pt-12 text-white md:pt-24">
         <DashboardBackdrop className="pointer-events-none absolute left-1/2 top-[11.745rem] z-0 w-[min(1180px,118vw)] -translate-x-1/2 opacity-20 md:top-[9.5175rem] md:opacity-20" />
         <div className="section-shell relative z-10 flex min-h-[820px] flex-col justify-center pb-6 text-center md:min-h-[900px] md:pb-24">
           <motion.div
@@ -135,7 +127,6 @@ export default function HomeScreen() {
             className="mx-auto max-w-5xl"
           >
             <span className="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-medium text-white/80 sm:text-sm">
-              <Sparkles className="hidden h-4 w-4 text-electric sm:block" aria-hidden="true" />
               {t.hero.eyebrow}
             </span>
             <h1 className="text-balance mt-8 text-5xl font-semibold tracking-tight text-white md:text-7xl lg:text-8xl">
@@ -178,7 +169,7 @@ export default function HomeScreen() {
             subtitle={t.services.subtitle}
             dark
           />
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-x-10 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
             {t.services.items.map((service, index) => {
               const Icon = serviceIcons[index];
               return (
@@ -189,7 +180,7 @@ export default function HomeScreen() {
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.25 }}
                   transition={{ duration: 0.5, delay: index * 0.04 }}
-                  className="glass-dark rounded-3xl p-7"
+                  className="pt-7"
                 >
                   <div className="mb-7 grid h-12 w-12 place-items-center rounded-2xl bg-electric text-white">
                     <Icon className="h-6 w-6" aria-hidden="true" />
@@ -206,26 +197,43 @@ export default function HomeScreen() {
       <section id="build" className="bg-white py-24 md:py-32">
         <div className="section-shell">
           <SectionHeading eyebrow={t.build.eyebrow} title={t.build.title} subtitle={t.build.subtitle} />
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {t.build.items.map((item, index) => {
-              const Icon = buildIcons[index];
-              return (
-                <motion.article
-                  key={item}
-                  variants={fadeUp}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.25 }}
-                  transition={{ duration: 0.45, delay: index * 0.03 }}
-                  className="glass-light group flex min-h-32 items-center gap-5 rounded-3xl p-6 transition hover:-translate-y-1 hover:border-electric/30"
-                >
-                  <div className="grid h-14 w-14 flex-none place-items-center rounded-2xl bg-mist text-electric transition group-hover:bg-electric group-hover:text-white">
-                    <Icon className="h-6 w-6" aria-hidden="true" />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {t.build.items.map((item, index) => (
+              <motion.article
+                key={item.title}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.45, delay: index * 0.03 }}
+                className="glass-light group flex h-full flex-col overflow-hidden rounded-3xl transition duration-300 hover:-translate-y-1 hover:border-electric/30"
+              >
+                <div className="p-3 pb-0">
+                  {buildImages[item.title] ? (
+                    <img
+                      src={buildImages[item.title]}
+                      alt={`${item.title} product snapshot`}
+                      className="aspect-video w-full rounded-2xl border border-slate-200 bg-slate-200 object-cover shadow-sm"
+                      draggable={false}
+                    />
+                  ) : (
+                    <div
+                      className="aspect-video rounded-2xl border border-slate-200 bg-[linear-gradient(135deg,#f1f5f9,#dbe3ee)]"
+                      aria-hidden="true"
+                    />
+                  )}
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="flex items-start justify-between gap-4">
+                    <h3 className="text-xl font-semibold tracking-tight text-navy">{item.title}</h3>
+                    <span className="rounded-lg bg-mist px-2 py-1 text-xs font-bold text-electric">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
                   </div>
-                  <h3 className="text-xl font-semibold tracking-tight text-navy">{item}</h3>
-                </motion.article>
-              );
-            })}
+                  <p className="mt-3 text-sm leading-7 text-slate-600">{item.description}</p>
+                </div>
+              </motion.article>
+            ))}
           </div>
         </div>
       </section>
@@ -251,10 +259,10 @@ export default function HomeScreen() {
                   index === t.process.steps.length - 1 ? "md:col-span-2" : ""
                 }`}
               >
-                <span className="grid h-10 w-10 place-items-center rounded-full bg-white text-sm font-bold text-navy">
-                  {index + 1}
-                </span>
-                <h3 className="mt-7 text-xl font-semibold text-white">{step.title}</h3>
+                <div className="flex items-center gap-4">
+                  <span className="text-3xl font-semibold tracking-tight text-electric">{index + 1}</span>
+                  <h3 className="text-xl font-semibold text-white">{step.title}</h3>
+                </div>
                 <p className="mt-3 text-base leading-7 text-white/60">{step.description}</p>
               </motion.article>
             ))}
@@ -265,28 +273,32 @@ export default function HomeScreen() {
       <section id="why" className="bg-white py-24 md:py-32">
         <div className="section-shell">
           <SectionHeading eyebrow={t.why.eyebrow} title={t.why.title} subtitle={t.why.subtitle} />
-          <div className="grid gap-5 lg:grid-cols-4">
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.55 }}
+            className="mt-12 overflow-hidden rounded-[2rem] border border-slate-100 bg-white shadow-soft"
+          >
+            <div className="grid divide-y divide-slate-100 md:grid-cols-2 md:divide-x md:divide-y-0 lg:grid-cols-4">
             {t.why.advantages.map((advantage, index) => {
               const Icon = advantageIcons[index];
               return (
-                <motion.article
+                <article
                   key={advantage.title}
-                  variants={fadeUp}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.25 }}
-                  transition={{ duration: 0.5, delay: index * 0.04 }}
-                  className="rounded-3xl border border-slate-100 bg-white p-7 shadow-soft"
+                  className="p-6 md:p-8"
                 >
-                  <div className="mb-7 grid h-12 w-12 place-items-center rounded-2xl bg-navy text-white">
-                    <Icon className="h-6 w-6" aria-hidden="true" />
+                  <div className="mb-6 grid h-10 w-10 place-items-center rounded-2xl bg-electric/10 text-electric">
+                    <Icon className="h-5 w-5" aria-hidden="true" />
                   </div>
-                  <h3 className="text-xl font-semibold tracking-tight text-navy">{advantage.title}</h3>
-                  <p className="mt-4 leading-7 text-slate-600">{advantage.description}</p>
-                </motion.article>
+                  <h3 className="text-lg font-semibold tracking-tight text-navy">{advantage.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-600 md:text-base">{advantage.description}</p>
+                </article>
               );
             })}
-          </div>
+            </div>
+          </motion.div>
           {/* Temporarily hidden.
           <motion.div
             variants={fadeUp}
@@ -355,14 +367,14 @@ export default function HomeScreen() {
                 href={t.contact.whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-navy px-6 text-sm font-semibold text-white transition hover:bg-electric"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-navy px-6 text-sm font-semibold text-white transition hover:bg-electric"
               >
                 <MessageCircle className="h-5 w-5" aria-hidden="true" />
                 {t.contact.whatsapp}
               </a>
               <a
                 href={t.contact.emailUrl}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 text-sm font-semibold text-navy transition hover:border-electric hover:text-electric"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-navy transition hover:border-electric hover:text-electric"
               >
                 <Mail className="h-5 w-5" aria-hidden="true" />
                 {t.contact.email}

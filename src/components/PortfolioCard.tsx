@@ -57,7 +57,7 @@ export default function PortfolioCard({
             href={href}
             target="_blank"
             rel="noreferrer"
-            className="mt-10 inline-flex min-h-12 items-center gap-2 rounded-full bg-white px-6 text-sm font-semibold text-navy transition hover:bg-electric hover:text-white"
+            className="mt-10 inline-flex min-h-12 items-center gap-2 rounded-xl bg-white px-6 text-sm font-semibold text-navy transition hover:bg-electric hover:text-white"
           >
             {cta}
             <ExternalLink className="h-4 w-4" aria-hidden="true" />

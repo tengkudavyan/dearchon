@@ -56,15 +56,42 @@
     "title": "Digital products for real business operations.",
     "subtitle": "Choose a proven product type or bring a custom business challenge. We shape the right solution around it.",
     "items": [
-      "CRM",
-      "HRM",
-      "POS System",
-      "E-Commerce",
-      "Job Portal",
-      "Booking System",
-      "Company Profile",
-      "Landing Page",
-      "F&B App"
+      {
+        "title": "CRM",
+        "description": "Manage leads, customers, sales pipelines, follow-ups, and team activity in one operational workspace."
+      },
+      {
+        "title": "HRM",
+        "description": "Centralize employee records, attendance, leave requests, approvals, and HR workflows."
+      },
+      {
+        "title": "POS System",
+        "description": "Handle transactions, product catalogs, stock movement, reports, and outlet operations."
+      },
+      {
+        "title": "E-Commerce",
+        "description": "Sell products online with catalog browsing, checkout, payments, orders, and admin controls."
+      },
+      {
+        "title": "Job Portal",
+        "description": "Publish roles, collect applications, manage candidates, and support hiring workflows."
+      },
+      {
+        "title": "Booking System",
+        "description": "Let customers reserve services, manage schedules, receive confirmations, and reduce manual coordination."
+      },
+      {
+        "title": "Company Profile",
+        "description": "Present your business, services, trust signals, and contact paths through a polished website."
+      },
+      {
+        "title": "Landing Page",
+        "description": "Launch focused campaign pages built to explain an offer and guide visitors toward action."
+      },
+      {
+        "title": "F&B App",
+        "description": "Support menus, ordering, reservations, loyalty, delivery flows, and restaurant operations."
+      }
     ]
   },
   "process": {

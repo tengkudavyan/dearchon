@@ -56,15 +56,42 @@
     "title": "Produk digital untuk operasional bisnis nyata.",
     "subtitle": "Pilih tipe produk yang sudah terbukti atau bawa tantangan bisnis khusus. Kami bentuk solusi yang paling tepat.",
     "items": [
-      "CRM",
-      "HRM",
-      "POS System",
-      "E-Commerce",
-      "Job Portal",
-      "Booking System",
-      "Company Profile",
-      "Landing Page",
-      "F&B App"
+      {
+        "title": "CRM",
+        "description": "Kelola leads, customer, sales pipeline, follow-up, dan aktivitas tim dalam satu workspace operasional."
+      },
+      {
+        "title": "HRM",
+        "description": "Satukan data karyawan, absensi, cuti, approval, dan workflow HR dalam sistem yang rapi."
+      },
+      {
+        "title": "POS System",
+        "description": "Tangani transaksi, katalog produk, pergerakan stok, laporan, dan operasional outlet."
+      },
+      {
+        "title": "E-Commerce",
+        "description": "Jual produk online dengan katalog, checkout, pembayaran, pesanan, dan kontrol admin."
+      },
+      {
+        "title": "Job Portal",
+        "description": "Publikasikan lowongan, kumpulkan lamaran, kelola kandidat, dan dukung proses rekrutmen."
+      },
+      {
+        "title": "Booking System",
+        "description": "Bantu customer melakukan reservasi, mengelola jadwal, menerima konfirmasi, dan mengurangi koordinasi manual."
+      },
+      {
+        "title": "Company Profile",
+        "description": "Tampilkan bisnis, layanan, bukti kredibilitas, dan jalur kontak lewat website yang polished."
+      },
+      {
+        "title": "Landing Page",
+        "description": "Bangun halaman campaign yang fokus menjelaskan penawaran dan mengarahkan visitor untuk action."
+      },
+      {
+        "title": "F&B App",
+        "description": "Dukung menu, pemesanan, reservasi, loyalty, delivery flow, dan operasional restoran."
+      }
     ]
   },
   "process": {

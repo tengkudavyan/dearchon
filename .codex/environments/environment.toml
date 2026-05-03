@@ -8,4 +8,4 @@ script = ""
 [[actions]]
 name = "Run"
 icon = "run"
-command = "next dev --webpack"
+command = "npx next dev --webpack -p 3000"
