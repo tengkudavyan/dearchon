@@ -15,8 +15,8 @@
     "primary": "Mulai Proyek",
     "secondary": "Lihat Cara Kerja",
     "stats": [
-      { "value": "25+", "label": "Proyek Terkirim" },
-      { "value": "15+", "label": "Layanan Digital" },
+      { "value": "3+", "label": "Proyek Terkirim" },
+      { "value": "9+", "label": "Layanan Digital" },
       { "value": "24/7", "label": "Siap Support" }
     ]
   },
@@ -115,7 +115,7 @@
     "project": "CDI Facility Services",
     "url": "cdifacilityservices.co.id",
     "description": "Website company profile untuk perusahaan facility management dan outsourcing yang melayani klien enterprise.",
-    "tags": ["Company Profile", "Facility Management", "Enterprise Services"],
+    "tags": ["Company Profile"],
     "cta": "Kunjungi Website"
   },
   "contact": {

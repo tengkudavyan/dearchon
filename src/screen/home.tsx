@@ -287,6 +287,7 @@ export default function HomeScreen() {
               );
             })}
           </div>
+          {/* Temporarily hidden.
           <motion.div
             variants={fadeUp}
             initial="hidden"
@@ -302,6 +303,7 @@ export default function HomeScreen() {
               </div>
             ))}
           </motion.div>
+          */}
         </div>
       </section>
 
