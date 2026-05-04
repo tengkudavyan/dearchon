@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dearchon.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dearchon.com";
 const title = "Dearchon | Digital Product Development Partner";
 const description =
   "Dearchon helps growing companies plan, design, build, launch, and maintain websites, web applications, mobile apps, CRM, HRM, POS, e-commerce, and custom digital products.";
