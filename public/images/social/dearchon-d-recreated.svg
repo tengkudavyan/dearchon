@@ -1,0 +1,30 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#FFFFFF"/>
+  <g transform="translate(112 266)">
+    <path
+      d="M96 70H570C738 70 856 190 856 274C856 358 738 478 570 478H246"
+      stroke="#0A1628"
+      stroke-width="104"
+      stroke-linecap="butt"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M40 18H154L250 122H136L40 18Z"
+      fill="#FFFFFF"
+    />
+    <path
+      d="M40 406L142 304V418H292L402 548H40V406Z"
+      fill="#4F8EF7"
+    />
+    <path
+      d="M322 478H570"
+      stroke="#0A1628"
+      stroke-width="104"
+      stroke-linecap="butt"
+    />
+    <path
+      d="M292 418L402 548H322L212 418H292Z"
+      fill="#FFFFFF"
+    />
+  </g>
+</svg>
